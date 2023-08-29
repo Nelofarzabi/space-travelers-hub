@@ -1,1 +1,1 @@
-# react-redux-project
+# react-redux-group-project
