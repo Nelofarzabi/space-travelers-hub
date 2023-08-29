@@ -2,12 +2,15 @@ main {
   width: 90%;
   margin: auto;
 }
+
 .rockets--list {
   list-style: none;
 }
+
 .rocket--img {
   width: 100%;
 }
+
 .reserve--btn {
   background-color: rgba(7, 7, 250, 0.913);
   border: none;
@@ -34,7 +37,7 @@ main {
   .rocket--img {
     width: 250px;
   }
-  
+
   .rockets--desc {
     display: flex;
     flex-direction: column;
