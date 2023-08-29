@@ -1,0 +1,55 @@
+main {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(128, 128, 128, 0.398);
+  border-collapse: collapse;
+  padding: 10px 15px;
+}
+
+.empty--th {
+  width: 15%;
+}
+
+.member--btn {
+  white-space: nowrap;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: slategray;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+.join--mission--btn {
+  width: 100%;
+  padding: 10px 20px;
+  color: rgb(51, 65, 85);
+  border: 1px solid rgb(51, 65, 85);
+}
+
+.active--btn {
+  background-color: rgb(96, 165, 250);
+}
+
+.leave--mission {
+  border: 1px solid rgb(239, 68, 68);
+  color: rgb(239, 68, 68);
+}
+
+.reserved {
+  color: gray;
+  border: 1px solid rgba(128, 128, 128, 0.398);
+  background-color: transparent;
+}
