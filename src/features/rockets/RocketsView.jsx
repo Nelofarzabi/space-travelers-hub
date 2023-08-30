@@ -25,7 +25,7 @@ const RocketsView = () => {
           <li key={id}>
             <img src={img} alt="" className="rocket--img" />
             <section className="rockets--desc">
-              <h3>{name}</h3>
+              <h3 className="rocket--name">{name}</h3>
               <p>
                 {reserved && <button type="button" className="reserved--badge">reserved</button>}
                 {description}

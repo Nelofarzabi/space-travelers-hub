@@ -14,6 +14,10 @@ main {
   width: 100%;
 }
 
+.rocket--name {
+  font-size: 1.8rem;
+}
+
 .booked--btn {
   color: gray;
   padding: 10px 20px;
@@ -43,7 +47,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   align-self: flex-start;
-  gap: 0.8rem;
+  gap: 0.4rem;
   margin-top: 0;
 }
 
@@ -66,7 +70,7 @@ main {
   }
 
   .rocket--img {
-    width: 300px;
+    width: 280px;
   }
 
   .rockets--desc {

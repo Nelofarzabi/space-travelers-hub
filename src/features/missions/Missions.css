@@ -16,6 +16,10 @@ td {
   padding: 10px 15px;
 }
 
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
 .empty--th {
   width: 15%;
 }
