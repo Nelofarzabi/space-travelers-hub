@@ -19,6 +19,7 @@ const RocketsView = () => {
             <section className="rockets--desc">
               <h3>{name}</h3>
               <p>
+                {reserved && <button type="button" className="reserved--badge">reserved</button>}
                 {description}
               </p>
               <button
