@@ -1,7 +1,9 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { reserveRockets } from './rocketsSlice';
 import './Rockets.css';
 
 const RocketsView = () => {
+  const dispatch = useDispatch();
   const { rockets } = useSelector((state) => state.rockets);
   return (
     <main>
@@ -9,7 +11,7 @@ const RocketsView = () => {
         {
       rockets.map((rocket) => {
         const {
-          name, id, img, description,
+          name, id, img, description, reserved,
         } = rocket;
         return (
           <li key={id}>
@@ -19,7 +21,15 @@ const RocketsView = () => {
               <p>
                 {description}
               </p>
-              <button type="button" className="reserve--btn">Reserve Rockets</button>
+              <button
+                type="button"
+                className={`reserve--btn ${reserved ? 'booked--btn' : 'not--booked--btn'}`}
+                onClick={() => dispatch(reserveRockets({ id }))}
+              >
+                { reserved
+                  ? 'cancel reservation'
+                  : 'Reserve Rockets'}
+              </button>
             </section>
           </li>
         );
