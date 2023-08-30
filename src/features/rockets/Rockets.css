@@ -20,15 +20,18 @@ main {
   border: 1px solid rgba(128, 128, 128, 0.398);
   background-color: transparent;
 }
+
 .not--booked--btn {
   background-color: rgb(25, 117, 230);
   padding: 12px 20px;
   border: none;
   color: #fff;
 }
+
 .not--booked--btn:hover {
   background-color: rgb(58, 108, 168);
 }
+
 .reserve--btn {
   border-radius: 5px;
   text-transform: capitalize;
