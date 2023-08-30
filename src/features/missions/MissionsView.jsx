@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions } from './missionsSlice';
+import { fetchMissions, joinMission } from './missionsSlice';
 import './Missions.css';
 
 const MissionsView = () => {
   const dispatch = useDispatch();
   const { missions } = useSelector((state) => state.missions);
+  console.log(missions);
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch]);
@@ -25,7 +26,9 @@ const MissionsView = () => {
         <tbody>
           {
             missions.map((mission) => {
-              const { name, id, description } = mission;
+              const {
+                name, id, description, joined,
+              } = mission;
               return (
                 <tr key={id}>
                   <th>{name}</th>
@@ -36,7 +39,13 @@ const MissionsView = () => {
                     <button type="button" className="member--btn">not a member</button>
                   </td>
                   <td>
-                    <button type="button" className="join--mission--btn">Join Mission</button>
+                    <button
+                      type="button"
+                      className={`${joined ? 'leave--mission' : 'join--mission--btn'} mission--btn`}
+                      onClick={() => dispatch(joinMission({ id }))}
+                    >
+                      { joined ? 'leave mission' : 'Join Mission'}
+                    </button>
                   </td>
                 </tr>
               );
