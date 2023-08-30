@@ -1,14 +1,18 @@
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions, joinMission } from './missionsSlice';
+import { joinMission } from './missionsSlice';
 import './Missions.css';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 
 const MissionsView = () => {
   const dispatch = useDispatch();
-  const { missions } = useSelector((state) => state.missions);
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
+  const { missions, loading, error } = useSelector((state) => state.missions);
+  if (loading) {
+    return <Loading type="missions" />;
+  }
+  if (error) {
+    return <Error />;
+  }
   return (
     <main>
       <table>
