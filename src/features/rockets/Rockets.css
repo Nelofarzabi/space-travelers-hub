@@ -47,6 +47,17 @@ main {
   margin-top: 0;
 }
 
+.reserved--badge {
+  background-color: rgb(25, 117, 230);
+  text-transform: capitalize;
+  padding: 3px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
 @media (min-width: 768px) {
   .rockets--list li {
     display: grid;
