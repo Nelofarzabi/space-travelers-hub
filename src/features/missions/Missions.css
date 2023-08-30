@@ -33,10 +33,17 @@ td {
 }
 
 .join--mission--btn {
-  width: 100%;
-  padding: 10px 20px;
   color: rgb(51, 65, 85);
   border: 1px solid rgb(51, 65, 85);
+}
+
+.mission--btn {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .active--btn {
