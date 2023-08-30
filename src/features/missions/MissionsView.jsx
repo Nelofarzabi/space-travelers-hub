@@ -6,7 +6,6 @@ import './Missions.css';
 const MissionsView = () => {
   const dispatch = useDispatch();
   const { missions } = useSelector((state) => state.missions);
-  console.log(missions);
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch]);
@@ -36,7 +35,12 @@ const MissionsView = () => {
                     {description}
                   </td>
                   <td>
-                    <button type="button" className="member--btn">not a member</button>
+                    <button
+                      type="button"
+                      className={`${joined ? 'active--btn' : 'non--active--btn'} member--btn`}
+                    >
+                      {joined ? 'active member' : 'not a member'}
+                    </button>
                   </td>
                   <td>
                     <button
