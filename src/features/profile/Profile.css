@@ -3,18 +3,27 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
+
 .profile--container h2 {
   padding: 10px 0;
 }
+
 .profile--list {
   list-style: none;
   border: 1px solid gray;
   display: grid;
 }
+
 .profile--list li {
   padding: 10px;
   text-transform: capitalize;
 }
+
 .profile--list li:not(:last-child) {
   border-bottom: 1px solid gray;
+}
+
+.list--info--para {
+  font-size: 1.3rem;
+  text-transform: capitalize;
 }
