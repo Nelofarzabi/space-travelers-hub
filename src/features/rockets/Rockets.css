@@ -5,24 +5,41 @@ main {
 
 .rockets--list {
   list-style: none;
+  display: grid;
+  gap: 2rem;
+  margin: 40px 0;
 }
 
 .rocket--img {
   width: 100%;
 }
 
-.reserve--btn {
-  background-color: rgba(7, 7, 250, 0.913);
+.booked--btn {
+  color: gray;
+  padding: 10px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.398);
+  background-color: transparent;
+}
+.not--booked--btn {
+  background-color: rgb(25, 117, 230);
+  padding: 12px 20px;
   border: none;
-  padding: 10px;
-  border-radius: 5px;
   color: #fff;
+}
+.not--booked--btn:hover {
+  background-color: rgb(58, 108, 168);
+}
+.reserve--btn {
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
 }
 
 .rockets--desc {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-self: flex-start;
   gap: 0.8rem;
   margin-top: 0;
 }
@@ -35,13 +52,12 @@ main {
   }
 
   .rocket--img {
-    width: 250px;
+    width: 300px;
   }
 
   .rockets--desc {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 0;
   }
 }
