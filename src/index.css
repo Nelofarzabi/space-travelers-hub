@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,700&family=Mukta:wght@300;400;500;700&family=Roboto+Slab:wght@100;200;300;400;500;900&display=swap');
+
 *,
 *::after,
 *::before {
@@ -12,4 +14,5 @@ a {
 
 body {
   background-color: #fff;
+  font-family: 'Mukta', sans-serif;
 }
