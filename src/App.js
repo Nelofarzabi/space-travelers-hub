@@ -5,6 +5,7 @@ import {
   RouterProvider,
   Route,
 } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import Layout from './components/Layout';
 import RocketsView from './features/rockets/RocketsView';
 import MissionsView from './features/missions/MissionsView';
@@ -20,6 +21,7 @@ const router = createBrowserRouter(createRoutesFromElements(
 ));
 
 function App() {
+  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRockets());
   }, []);
