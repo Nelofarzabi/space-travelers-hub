@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import configureStore from 'redux-mock-store';
 import userEvent from '@testing-library/user-event';
 import MissionsView from '../MissionsView';
-import { joinMission } from '../missionsSlice';
+import { joinMission } from '../../redux/missions/missionsSlice';
 
 const mockStore = configureStore([]);
 

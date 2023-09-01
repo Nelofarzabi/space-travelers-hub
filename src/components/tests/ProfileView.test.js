@@ -4,8 +4,8 @@ import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
 import { MemoryRouter } from 'react-router-dom';
 import ProfileView from '../ProfileView';
-import rocketsReducer from '../../rockets/rocketsSlice'; // Update with actual path
-import missionsReducer from '../../missions/missionsSlice'; // Update with actual path
+import rocketsReducer from '../../redux/rockets/rocketsSlice'; // Update with actual path
+import missionsReducer from '../../redux/missions/missionsSlice'; // Update with actual path
 
 test('renders reserved missions and rockets', () => {
   const store = configureStore({

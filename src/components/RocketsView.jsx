@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { reserveRockets } from './rocketsSlice';
+import { reserveRockets } from '../redux/rockets/rocketsSlice';
 import './Rockets.css';
-import Loading from '../../components/Loading';
-import Error from '../../components/Error';
+import Loading from './Loading';
+import Error from './Error';
 
 const RocketsView = () => {
   const dispatch = useDispatch();

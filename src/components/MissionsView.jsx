@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { joinMission } from './missionsSlice';
+import { joinMission } from '../redux/missions/missionsSlice';
 import './Missions.css';
-import Loading from '../../components/Loading';
-import Error from '../../components/Error';
+import Loading from './Loading';
+import Error from './Error';
 
 const MissionsView = () => {
   const dispatch = useDispatch();

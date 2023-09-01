@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import configureStore from 'redux-mock-store';
 import userEvent from '@testing-library/user-event';
 import RocketsView from '../RocketsView';
-import { reserveRockets } from '../rocketsSlice';
+import { reserveRockets } from '../../redux/rockets/rocketsSlice';
 
 const mockStore = configureStore([]);
 

@@ -7,9 +7,9 @@ import {
 } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Layout from './components/Layout';
-import RocketsView from './redux/rockets/RocketsView';
-import MissionsView from './redux/missions/MissionsView';
-import ProfileView from './redux/profile/ProfileView';
+import RocketsView from './components/RocketsView';
+import MissionsView from './components/MissionsView';
+import ProfileView from './components/ProfileView';
 import { fetchRockets } from './redux/rockets/rocketsSlice';
 import { fetchMissions } from './redux/missions/missionsSlice';
 
