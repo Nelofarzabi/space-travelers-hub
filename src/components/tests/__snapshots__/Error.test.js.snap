@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test error component Error renders correctly 1`] = `
+<div>
+  <div
+    class="loading--container"
+  >
+    <h4
+      class="Loading--header"
+    >
+      An Error ocuured
+    </h4>
+  </div>
+</div>
+`;

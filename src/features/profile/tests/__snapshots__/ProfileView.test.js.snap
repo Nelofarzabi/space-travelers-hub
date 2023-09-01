@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders reserved missions and rockets 1`] = `
+<div>
+  <main
+    class="profile--container"
+  >
+    <section>
+      <h2>
+        My Missions
+      </h2>
+      <ul
+        class="profile--list"
+      >
+        <li>
+          Mission 1
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>
+        My Rockets
+      </h2>
+      <ul
+        class="profile--list"
+      >
+        <li>
+          Rocket 1
+        </li>
+      </ul>
+    </section>
+  </main>
+</div>
+`;
