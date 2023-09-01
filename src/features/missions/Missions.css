@@ -1,7 +1,6 @@
 main {
   width: 90%;
-  margin: auto;
-  margin-top: 20px;
+  margin: 40px auto;
 }
 
 table {
@@ -14,6 +13,10 @@ td {
   border: 1px solid rgba(128, 128, 128, 0.398);
   border-collapse: collapse;
   padding: 10px 15px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
 }
 
 .empty--th {

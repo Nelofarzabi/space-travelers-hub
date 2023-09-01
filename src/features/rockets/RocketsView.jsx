@@ -1,10 +1,18 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { reserveRockets } from './rocketsSlice';
 import './Rockets.css';
+import Loading from '../../components/Loading';
+import Error from '../../components/Error';
 
 const RocketsView = () => {
   const dispatch = useDispatch();
-  const { rockets } = useSelector((state) => state.rockets);
+  const { rockets, loading, error } = useSelector((state) => state.rockets);
+  if (loading) {
+    return <Loading type="rockets" />;
+  }
+  if (error) {
+    return <Error />;
+  }
   return (
     <main>
       <ul className="rockets--list">
@@ -17,7 +25,7 @@ const RocketsView = () => {
           <li key={id}>
             <img src={img} alt="" className="rocket--img" />
             <section className="rockets--desc">
-              <h3>{name}</h3>
+              <h3 className="rocket--name">{name}</h3>
               <p>
                 {reserved && <button type="button" className="reserved--badge">reserved</button>}
                 {description}

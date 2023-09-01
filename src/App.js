@@ -11,6 +11,7 @@ import RocketsView from './features/rockets/RocketsView';
 import MissionsView from './features/missions/MissionsView';
 import ProfileView from './features/profile/ProfileView';
 import { fetchRockets } from './features/rockets/rocketsSlice';
+import { fetchMissions } from './features/missions/missionsSlice';
 
 const router = createBrowserRouter(createRoutesFromElements(
   <Route element={<Layout />}>
@@ -24,6 +25,9 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRockets());
+  }, [dispatch]);
+  useEffect(() => {
+    dispatch(fetchMissions());
   }, [dispatch]);
   return (
     <div className="App">
