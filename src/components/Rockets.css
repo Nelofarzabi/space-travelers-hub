@@ -1,0 +1,81 @@
+main {
+  width: 90%;
+  margin: auto;
+}
+
+.rockets--list {
+  list-style: none;
+  display: grid;
+  gap: 2rem;
+  margin: 40px 0;
+}
+
+.rocket--img {
+  width: 100%;
+}
+
+.rocket--name {
+  font-size: 1.8rem;
+}
+
+.booked--btn {
+  color: gray;
+  padding: 10px 20px;
+  border: 1px solid rgba(128, 128, 128, 0.398);
+  background-color: transparent;
+}
+
+.not--booked--btn {
+  background-color: rgb(25, 117, 230);
+  padding: 12px 20px;
+  border: none;
+  color: #fff;
+}
+
+.not--booked--btn:hover {
+  background-color: rgb(58, 108, 168);
+}
+
+.reserve--btn {
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.rockets--desc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: flex-start;
+  gap: 0.4rem;
+  margin-top: 0;
+}
+
+.reserved--badge {
+  background-color: rgb(25, 117, 230);
+  text-transform: capitalize;
+  padding: 3px 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 768px) {
+  .rockets--list li {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1.5rem;
+  }
+
+  .rocket--img {
+    width: 280px;
+  }
+
+  .rockets--desc {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

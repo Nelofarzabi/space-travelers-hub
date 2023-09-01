@@ -1,0 +1,70 @@
+main {
+  width: 90%;
+  margin: 40px auto;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgba(128, 128, 128, 0.398);
+  border-collapse: collapse;
+  padding: 10px 15px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+.empty--th {
+  width: 15%;
+}
+
+.member--btn {
+  white-space: nowrap;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.join--mission--btn {
+  color: rgb(51, 65, 85);
+  border: 1px solid rgb(51, 65, 85);
+}
+
+.mission--btn {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.non--active--btn {
+  background-color: slategray;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+}
+
+.active--btn {
+  background-color: rgb(96, 165, 250);
+  text-transform: capitalize;
+  font-size: 0.7rem;
+}
+
+.leave--mission {
+  border: 1px solid rgb(239, 68, 68);
+  color: rgb(239, 68, 68);
+}
+
+.reserved {
+  color: gray;
+  border: 1px solid rgba(128, 128, 128, 0.398);
+  background-color: transparent;
+}
