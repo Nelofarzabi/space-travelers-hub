@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Error Component Loading component renders correctly 1`] = `
+<div>
+  <div
+    class="loading--container"
+  >
+    <h4
+      class="Loading--header"
+    >
+      Loading undefined ...
+    </h4>
+    <p>
+      Please hold on...
+    </p>
+  </div>
+</div>
+`;
